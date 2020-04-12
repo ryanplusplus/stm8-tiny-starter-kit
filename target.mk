@@ -25,4 +25,7 @@ LIB_DIRS := \
 INC_DIRS := \
 	$(TINY)/include \
 
+.PHONY: default
+default: size
+
 include $(TOOLS_DIR)/makefile-worker.mk
