@@ -1,0 +1,6 @@
+[submodule "lib/stm8-tiny"]
+	path = lib/stm8-tiny
+	url = https://github.com/ryanplusplus/stm8-tiny
+[submodule "tools"]
+	path = tools
+	url = https://github.com/ryanplusplus/sdcc-stm8-tools
