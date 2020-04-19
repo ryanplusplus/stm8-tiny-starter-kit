@@ -3,6 +3,7 @@ BUILD_DIR := ./build/target
 TOOLS_DIR := tools
 STM8_TINY := lib/stm8-tiny
 TINY := $(STM8_TINY)/lib/tiny
+TINY_DEVICES := lib/tiny-devices
 
 DEVICE := stm8s103f3
 DEVICE_TYPE := STM8S103
@@ -22,9 +23,11 @@ LIB_FILES := \
 LIB_DIRS := \
   $(TINY)/src \
   $(STM8_TINY)/src \
+  $(TINY_DEVICES)/src \
 
 INC_DIRS := \
   $(TINY)/include \
+  $(TINY_DEVICES)/include \
 
 .PHONY: default
 default: size
