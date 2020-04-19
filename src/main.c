@@ -9,7 +9,6 @@
 #include "clock.h"
 #include "tim4_system_tick.h"
 #include "pb5_heartbeat.h"
-#include "pc5_heartbeat.h"
 #include "tiny_timer.h"
 #include "watchdog.h"
 

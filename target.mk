@@ -15,6 +15,7 @@ MAIN := src/main.c
 SRC_FILES := \
 
 SRC_DIRS := \
+  src \
 
 LIB_FILES := \
 
@@ -23,7 +24,7 @@ LIB_DIRS := \
   $(STM8_TINY)/src \
 
 INC_DIRS := \
-	$(TINY)/include \
+  $(TINY)/include \
 
 .PHONY: default
 default: size
