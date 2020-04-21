@@ -10,7 +10,7 @@ SRC_DIRS ?= \
 
 INC_DIRS ?= \
   $(STM8_TINY)/src \
-	$(TINY)/include \
+  $(TINY)/include \
 
 LDFLAGS := -lstdc++ -lCppUTest -lCppUTestExt -lm
 
