@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "name": "STM8S103",
+      "defines": [
+        "STM8S103"
+      ],
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "intelliSenseMode": "gcc-x64",
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}
