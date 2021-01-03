@@ -7,7 +7,7 @@
     {
       "name": "Target",
       "cwd": "${workspaceRoot}",
-      "executable": "${workspaceFolder}/build/target/app-debug.elf",
+      "executable": "${workspaceFolder}/build/target/target-debug.elf",
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
@@ -23,7 +23,7 @@
       "name": "Test",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/test/app_tests",
+      "program": "${workspaceFolder}/build/test/tests",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",

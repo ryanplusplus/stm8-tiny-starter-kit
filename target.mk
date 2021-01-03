@@ -1,4 +1,4 @@
-TARGET := app
+TARGET := target
 BUILD_DIR := ./build/target
 TOOLS_DIR := tools
 STM8_TINY := lib/stm8-tiny
