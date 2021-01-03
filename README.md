@@ -31,6 +31,11 @@ make -f target.mk erase
 make -f target.mk upload
 ```
 
+### Debug via GDB TUI
+```shell
+make -f <target>.mk debug
+```
+
 ### Open documentation
 ```shell
 make -f <target>.mk datasheet
