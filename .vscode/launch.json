@@ -7,17 +7,18 @@
     {
       "name": "Target",
       "cwd": "${workspaceRoot}",
-      "executable": "${workspaceFolder}/build/target/target-debug.elf",
+      "executable": "${workspaceFolder}/build/target-debug.elf",
       "request": "launch",
       "type": "cortex-debug",
       "servertype": "openocd",
-      "serverpath": "${workspaceFolder}/build/target/openocd/bin/openocd",
+      "serverpath": "${workspaceFolder}/build/openocd/bin/openocd",
       "runToMain": true,
-      "armToolchainPath": "${workspaceRoot}/build/target",
+      "armToolchainPath": "${workspaceRoot}/build",
       "toolchainPrefix": "stm8",
       "configFiles": [
-        "${workspaceRoot}/build/target/openocd.cfg"
+        "${workspaceRoot}/build/openocd.cfg"
       ],
+      "svdFile": "build/target.svd",
       "preLaunchTask": "debug-deps-target"
     },
     {

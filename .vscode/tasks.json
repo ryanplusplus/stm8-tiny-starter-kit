@@ -19,7 +19,7 @@
     {
       "label": "debug-deps-test",
       "type": "shell",
-      "command": "make -j8 -f test.mk debug-deps"
+      "command": "make -j8 -f test.mk debug-deps",
       "presentation": {
         "echo": true,
         "reveal": "silent",

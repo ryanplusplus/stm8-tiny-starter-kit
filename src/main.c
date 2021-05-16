@@ -9,6 +9,7 @@
 #include "clock.h"
 #include "tim4_system_tick.h"
 #include "tiny_timer.h"
+#include "pb5_heartbeat.h"
 #include "watchdog.h"
 
 static tiny_timer_group_t timer_group;
@@ -28,6 +29,7 @@ void main(void)
     watchdog_init();
     clock_init();
     tiny_timer_group_init(&timer_group, tim4_system_tick_init());
+    pb5_heartbeat_init(&timer_group);
   }
   interrupts_enable();
 
