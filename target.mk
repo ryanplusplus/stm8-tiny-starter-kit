@@ -1,5 +1,5 @@
 TARGET := target
-BUILD_DIR := ./build/target
+BUILD_DIR := build
 TOOLS_DIR := tools
 STM8_TINY := lib/stm8-tiny
 TINY := $(STM8_TINY)/lib/tiny
