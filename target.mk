@@ -8,28 +8,19 @@ TINY_DEVICES := lib/tiny-devices
 DEVICE := stm8s103f3
 DEVICE_TYPE := STM8S103
 STLINK := stlinkv2
-OPENOCD_CFG := $(TOOLS_DIR)/openocd/stm8s103.cfg
+OPENOCD_CFG := tools/openocd/stm8s103.cfg
+SVD := tools/svd/stm8s103f3.svd
 TOOLCHAIN_VERSION := 4.1.0
+
+include tools/defaults.mk
 
 MAIN := src/main.c
 
 SRC_FILES := \
 
-SRC_DIRS := \
-  src \
-
-LIB_FILES := \
-
-LIB_DIRS := \
-  $(TINY)/src \
-  $(STM8_TINY)/src \
-  $(TINY_DEVICES)/src \
-
 INC_DIRS := \
-  $(TINY)/include \
-  $(TINY_DEVICES)/include \
 
-.PHONY: default
-default: size
+include lib_stm8-tiny.mk
 
-include $(TOOLS_DIR)/makefile-worker.mk
+
+include tools/tools.mk
