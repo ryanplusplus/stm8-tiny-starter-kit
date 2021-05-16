@@ -1,9 +1,5 @@
 TARGET := target
 BUILD_DIR := build
-TOOLS_DIR := tools
-STM8_TINY := lib/stm8-tiny
-TINY := $(STM8_TINY)/lib/tiny
-TINY_DEVICES := lib/tiny-devices
 
 DEVICE := stm8s103f3
 DEVICE_TYPE := STM8S103
