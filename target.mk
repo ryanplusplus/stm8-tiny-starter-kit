@@ -14,6 +14,8 @@ MAIN := src/main.c
 
 SRC_FILES := \
 
+SRC_DIRS := \
+
 INC_DIRS := \
 
 include lib/stm8-tiny/lib_stm8-tiny.mk
