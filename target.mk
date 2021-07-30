@@ -15,6 +15,7 @@ MAIN := src/main.c
 SRC_FILES := \
 
 SRC_DIRS := \
+  src \
 
 INC_DIRS := \
 
