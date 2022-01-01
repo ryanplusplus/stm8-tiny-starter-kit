@@ -26,7 +26,8 @@ void main(void)
   interrupts_enable();
 
   while(true) {
-    tiny_timer_group_run(&timer_group);
-    wfi();
+    if(!tiny_timer_group_run(&timer_group)) {
+      interrupts_wait_for_interrupt();
+    }
   }
 }
