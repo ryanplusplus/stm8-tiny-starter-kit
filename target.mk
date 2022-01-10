@@ -20,5 +20,6 @@ SRC_DIRS := \
 INC_DIRS := \
 
 include lib/stm8-tiny/lib_stm8-tiny.mk
+include lib/tiny-devices/lib_tiny-devices.mk
 
 include tools/tools.mk
