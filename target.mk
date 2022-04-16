@@ -24,4 +24,8 @@ INC_DIRS := \
 include lib/stm8-tiny/lib_stm8-tiny.mk
 include lib/tiny-devices/lib_tiny-devices.mk
 
+.PHONY: all
+all: $(BUILD_DIR)/$(TARGET).hex
+	$(call size,$(BUILD_DIR)/$(TARGET).map)
+
 include tools/tools.mk
