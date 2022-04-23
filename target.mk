@@ -8,7 +8,7 @@ DEVICE_TYPE := STM8S103
 STLINK := stlinkv2
 OPENOCD_CFG := tools/openocd/stm8s103.cfg
 SVD := tools/svd/stm8s103f3.svd
-TOOLCHAIN_VERSION := 4.0.0
+TOOLCHAIN_VERSION := 4.2.0
 
 include tools/defaults.mk
 
