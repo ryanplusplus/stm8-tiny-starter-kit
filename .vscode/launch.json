@@ -6,20 +6,25 @@
   "configurations": [
     {
       "name": "Target",
-      "cwd": "${workspaceRoot}",
-      "executable": "${workspaceFolder}/build/target-debug.elf",
+      "type": "cppdbg",
       "request": "launch",
-      "type": "cortex-debug",
-      "servertype": "openocd",
-      "serverpath": "${workspaceFolder}/build/openocd/bin/openocd",
-      "runToMain": true,
-      "armToolchainPath": "${workspaceRoot}/build",
-      "toolchainPrefix": "stm8",
-      "configFiles": [
-        "${workspaceRoot}/build/openocd.cfg"
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/build/target-debug.elf",
+      "MIMode": "gdb",
+      "miDebuggerPath": "${workspaceFolder}/build/stm8-gdb",
+      "miDebuggerServerAddress": "localhost:3333",
+      "debugServerPath": "${workspaceFolder}/build/openocd/bin/openocd",
+      "debugServerArgs": "-f ${workspaceFolder}/build/openocd.cfg",
+      "serverStarted": "Listening on port .* for gdb connections",
+      "filterStderr": true,
+      "postRemoteConnectCommands": [
+        {
+          "text": "load"
+        }
       ],
-      "svdFile": "build/target.svd",
-      "preLaunchTask": "debug-deps-target"
+      "miDebuggerArgs": "${workspaceFolder}/build/stm8s-debug.elf",
+      "preLaunchTask": "debug-deps-target",
+      "svdPath": "${workspaceFolder}/build/target.svd"
     },
     {
       "name": "Test",
